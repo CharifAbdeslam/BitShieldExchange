@@ -12,6 +12,9 @@ export const LIVE_TICKERNEO = "LIVE_TICKERNEO";
 export const LIVE_TICKERZEC = "LIVE_TICKERZEC";
 export const LIVE_TICKEREOS = "LIVE_TICKEREOS";
 export const LIVE_TICKEROMG = "LIVE_TICKEROMG";
+export const LIVE_TICKERXVG = "LIVE_TICKERXVG";
+export const LIVE_TICKERGNT = "LIVE_TICKERGNT";
+export const LIVE_TICKERQTM = "LIVE_TICKERQTM";
 const socket = socketIOClient('http://localhost:3001');
 let tickerChannel = {};
 
@@ -20,41 +23,50 @@ socket.on("channelID",function(data){
 })
 export const _getTicker =()=> dispatch =>{
   socket.on("ticker",function(data){
-       if(tickerChannel.eth.chanId === data[0] && tickerChannel.eth.channel === "ticker"){
+       if(tickerChannel.eth.chanId === data[0]){
         dispatch({type:LIVE_TICKERETH,payload:data})
        }
-       if(tickerChannel.bch.chanId === data[0] && tickerChannel.bch.channel === "ticker"){
+       if(tickerChannel.bch.chanId === data[0]){
          dispatch({type:LIVE_TICKERBCH,payload:data})
        }
-       if(tickerChannel.xrp.chanId === data[0] && tickerChannel.xrp.channel === "ticker"){
+       if(tickerChannel.xrp.chanId === data[0]){
          dispatch({type:LIVE_TICKERXRP,payload:data})
        }
-       if(tickerChannel.ltc.chanId === data[0] && tickerChannel.ltc.channel === "ticker"){
+       if(tickerChannel.ltc.chanId === data[0]){
          dispatch({type:LIVE_TICKERLTC,payload:data})
        }
-       if(tickerChannel.xmr.chanId === data[0] && tickerChannel.xmr.channel === "ticker"){
+       if(tickerChannel.xmr.chanId === data[0]){
          dispatch({type:LIVE_TICKERXMR,payload:data})
        }
-       if(tickerChannel.etc.chanId === data[0] && tickerChannel.etc.channel === "ticker"){
+       if(tickerChannel.etc.chanId === data[0]){
          dispatch({type:LIVE_TICKERETC,payload:data})
        }
-       if(tickerChannel.iot.chanId === data[0] && tickerChannel.iot.channel === "ticker"){
+       if(tickerChannel.iot.chanId === data[0]){
          dispatch({type:LIVE_TICKERIOT,payload:data})
        }
-       if(tickerChannel.dsh.chanId === data[0] && tickerChannel.dsh.channel === "ticker"){
+       if(tickerChannel.dsh.chanId === data[0]){
          dispatch({type:LIVE_TICKERDSH,payload:data})
        }
-       if(tickerChannel.neo.chanId === data[0] && tickerChannel.neo.channel === "ticker"){
+       if(tickerChannel.neo.chanId === data[0]){
          dispatch({type:LIVE_TICKERNEO,payload:data})
        }
-       if(tickerChannel.zec.chanId === data[0] && tickerChannel.zec.channel === "ticker"){
+       if(tickerChannel.zec.chanId === data[0]){
          dispatch({type:LIVE_TICKERZEC,payload:data})
        }
-       if(tickerChannel.eos.chanId === data[0] && tickerChannel.eos.channel === "ticker"){
+       if(tickerChannel.eos.chanId === data[0]){
          dispatch({type:LIVE_TICKEREOS,payload:data})
        }
-       if(tickerChannel.omg.chanId === data[0] && tickerChannel.omg.channel === "ticker"){
+       if(tickerChannel.omg.chanId === data[0]){
          dispatch({type:LIVE_TICKEROMG,payload:data})
+       }
+       if(tickerChannel.xvg.chanId === data[0]){
+         dispatch({type:LIVE_TICKERXVG,payload:data})
+       }
+       if(tickerChannel.gnt.chanId === data[0]){
+         dispatch({type:LIVE_TICKERGNT,payload:data})
+       }
+       if(tickerChannel.qtm.chanId === data[0]){
+         dispatch({type:LIVE_TICKERQTM,payload:data})
        }
   })
 

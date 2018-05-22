@@ -83,6 +83,21 @@ class Exchange extends React.Component {
                   symbols="OMG/BTC"
                   ticker={this.props.tickerOmg}
                   icon = "cc OMG"/>}/>
+          <Route exact path="/exchange/XVG/BTC" component={(props)=>
+                  <LeftWrapperExchange
+                  symbols="XVG/BTC"
+                  ticker={this.props.tickerXvg}
+                  icon = "cc XVG"/>}/>
+          <Route exact path="/exchange/GNT/BTC" component={(props)=>
+                  <LeftWrapperExchange
+                  symbols="GNT/BTC"
+                  ticker={this.props.tickerGnt}
+                  icon = "cc GNT"/>}/>
+          <Route exact path="/exchange/QTM/BTC" component={(props)=>
+                  <LeftWrapperExchange
+                  symbols="QTM/BTC"
+                  ticker={this.props.tickerQtm}
+                  icon = "cc QTUM"/>}/>
           </Switch>
      </Row>
     </Container>
@@ -104,6 +119,9 @@ const mapStateToProps = state =>({
   tickerZec:state.price.tickerZec,
   tickerEos:state.price.tickerEos,
   tickerOmg:state.price.tickerOmg,
+  tickerXvg:state.price.tickerXvg,
+  tickerGnt:state.price.tickerGnt,
+  tickerQtm:state.price.tickerQtm,
   });
 export default connect(mapStateToProps,{_getTicker})(Exchange);
 Exchange.propTypes={
@@ -119,5 +137,8 @@ Exchange.propTypes={
   tickerZec:PropTypes.array.isRequired,
   tickerEos:PropTypes.array.isRequired,
   tickerOmg:PropTypes.array.isRequired,
+  tickerXvg:PropTypes.array.isRequired,
+  tickerGnt:PropTypes.array.isRequired,
+  tickerQtm:PropTypes.array.isRequired,
   _getTicker:PropTypes.func.isRequired
 };

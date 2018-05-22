@@ -36,6 +36,9 @@ class TickerSymbols extends React.Component{
           <MarketRow  symbol="EOS/BTC" ticker={this.props.tickerEos}/>
           <MarketRow  symbol="ZEC/BTC" ticker={this.props.tickerZec}/>
           <MarketRow  symbol="OMG/BTC" ticker={this.props.tickerOmg}/>
+          <MarketRow  symbol="XVG/BTC" ticker={this.props.tickerXvg}/>
+          <MarketRow  symbol="GNT/BTC" ticker={this.props.tickerGnt}/>
+          <MarketRow  symbol="QTM/BTC" ticker={this.props.tickerQtm}/>
         </tbody>
           </Table>
     </Col>
@@ -55,6 +58,9 @@ const mapStateToProps=state=>({
   tickerZec:state.price.tickerZec,
   tickerEos:state.price.tickerEos,
   tickerOmg:state.price.tickerOmg,
+  tickerXvg:state.price.tickerXvg,
+  tickerGnt:state.price.tickerGnt,
+  tickerQtm:state.price.tickerQtm,
 })
 export default connect(mapStateToProps)(TickerSymbols);
 TickerSymbols.propTypes={
@@ -70,4 +76,7 @@ TickerSymbols.propTypes={
   tickerZec:PropTypes.array.isRequired,
   tickerEos:PropTypes.array.isRequired,
   tickerOmg:PropTypes.array.isRequired,
+  tickerXvg:PropTypes.array.isRequired,
+  tickerGnt:PropTypes.array.isRequired,
+  tickerQtm:PropTypes.array.isRequired,
 };

@@ -82,7 +82,8 @@ body {
     height: 30px; }
     body #exchange-nav a {
       color: #D2D3D3;
-      text-decoration: none; }
+      text-decoration: none;
+      font-size: 14px; }
       body #exchange-nav a:hover {
         color: white; }
   body .login-nav {
