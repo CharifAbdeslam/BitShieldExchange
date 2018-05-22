@@ -1,4 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Mina:400,700");
+.text-danger {
+  color: #F95A62 !important; }
+
+.text-success {
+  color: #78C653 !important; }
+
+.table-ticker a {
+  color: #D2D3D3;
+  text-decoration: none; }
+
+.table-ticker span {
+  font-size: 12px; }
+
+.table-ticker table {
+  text-align: center; }
+  .table-ticker table th {
+    padding: 4px 0;
+    border-top: none;
+    color: #D2D3D3;
+    font-weight: normal;
+    font-size: 12px;
+    border-bottom: 1px solid #D2D3D3; }
+  .table-ticker table td {
+    padding: 4px 0;
+    border-top: none;
+    color: #D2D3D3;
+    font-size: 12px; }
+
+.white-text {
+  color: #D2D3D3; }
+
+.exchange-wrapper {
+  background-image: none !important;
+  background-color: #0c0c0c; }
+
+.exchange-field {
+  background-color: #1B262D;
+  border-radius: 5px; }
+
+.exchange-price-wrapper {
+  min-width: 320px; }
+  .exchange-price-wrapper h1 {
+    font-size: 3.5rem; }
+  .exchange-price-wrapper h1,
+  .exchange-price-wrapper span {
+    color: #D2D3D3; }
+
+.text-grey {
+  color: grey !important; }
+
 body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: #0c0c0c;
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: 'Mina', sans-serif; }
+  body .liveprice-wrapper {
+    background-image: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
+    padding: 15px; }
+  body .live-price-table {
+    color: #D2D3D3;
+    font-size: 12px; }
+    body .live-price-table thead th {
+      border-bottom: none;
+      border-top: none; }
+    body .live-price-table td,
+    body .live-price-table th {
+      border-top: 0.1px solid #1B262D; }
+  body .btn-outline-warning {
+    color: #F27420;
+    border-color: #F27420; }
+    body .btn-outline-warning:hover {
+      background-color: #F27420;
+      border-color: #F27420; }
+  body .logo-menu {
+    margin-bottom: 9px; }
+  body #exchange-nav {
+    background-color: #1B262D !important;
+    padding: 0 20px;
+    height: 30px; }
+    body #exchange-nav a {
+      color: #D2D3D3;
+      text-decoration: none; }
+      body #exchange-nav a:hover {
+        color: white; }
+  body .login-nav {
+    border-right: 1px solid #D2D3D3; }
