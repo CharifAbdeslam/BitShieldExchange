@@ -83,7 +83,8 @@ body {
     body #exchange-nav a {
       color: #D2D3D3;
       text-decoration: none;
-      font-size: 14px; }
+      font-size: 14px;
+      font-weight: bold; }
       body #exchange-nav a:hover {
         color: white; }
   body .login-nav {

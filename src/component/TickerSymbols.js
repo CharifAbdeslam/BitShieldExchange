@@ -10,9 +10,8 @@ class TickerSymbols extends React.Component{
   return(<div className="mt-2">
     <Col xs={2} className="exchange-price-wrapper exchange-field ml-2 pr-1 pl-1 table-ticker">
       <span className="white-text ml-2"
-            style={{fontSize: '10px'}}>LIVE MARKET: <FontAwesomeIcon icon={faCircle}
-            style={{color: '#78C653'}}/>  <FontAwesomeIcon icon={faCircle}
-            style={{color: '#890202'}}/>
+            style={{fontSize: '10px'}}>TICKER: <FontAwesomeIcon icon={faCircle}
+            style={{color: '#78C653'}}/>
           </span>
           <Table  responsive hover>
             <thead>

@@ -18,7 +18,7 @@ export const LIVE_TICKERQTM = "LIVE_TICKERQTM";
 const socket = socketIOClient('http://localhost:3001');
 let tickerChannel = {};
 
-socket.on("channelID",function(data){
+socket.on("tickerChanell",function(data){
   tickerChannel = Object.assign({},data);
 })
 export const _getTicker =()=> dispatch =>{
