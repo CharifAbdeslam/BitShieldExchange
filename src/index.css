@@ -1,4 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Mina:400,700");
+.exchange-form label {
+  color: #D2D3D3;
+  font-size: 12px;
+  margin-bottom: 3px; }
+
+.exchange-form input {
+  width: 90%;
+  background-color: #333F47;
+  border: 1px solid #444;
+  color: white; }
+  .exchange-form input:focus {
+    border: 1px solid #F27420; }
+
+.nav-tabs {
+  border-bottom: 1px solid #444;
+  padding: 11px 5px 0px 18px; }
+  .nav-tabs .nav-link {
+    color: #D2D3D3 !important; }
+  .nav-tabs .active {
+    background-color: transparent !important;
+    color: #D2D3D3;
+    border-bottom: solid 1px #1B262D !important;
+    border-right: solid 1px #444 !important;
+    border-left: solid 1px #444 !important;
+    border-top: solid 1px #444 !important; }
+
+.tab-form-wrapper {
+  border-right: solid 1px #444;
+  border-left: solid 1px #444;
+  border-bottom: solid 1px #444; }
+
 .text-danger {
   color: #F95A62 !important; }
 
@@ -14,13 +45,15 @@
 
 .table-ticker table {
   text-align: center; }
+  .table-ticker table tr {
+    border: 1px solid #444; }
   .table-ticker table th {
     padding: 4px 0;
     border-top: none;
     color: #D2D3D3;
     font-weight: normal;
     font-size: 12px;
-    border-bottom: 1px solid #D2D3D3; }
+    border-bottom: 1px solid #444; }
   .table-ticker table td {
     padding: 4px 0;
     border-top: none;
@@ -36,7 +69,8 @@
 
 .exchange-field {
   background-color: #1B262D;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 1px solid #444; }
 
 .exchange-price-wrapper {
   min-width: 320px; }

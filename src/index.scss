@@ -11,7 +11,42 @@ $red: #F95A62;
 $green: #78C653;
 $blueWrapper:#1B262D;
 $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
-
+.exchange-form{
+  label{
+    color:$white;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  input{
+   width: 90%;
+   background-color: #333F47;
+   border: 1px solid #444;
+   color: white;
+   &:focus{
+     border: 1px solid $orange;
+   }
+  }
+}
+.nav-tabs{
+  border-bottom: 1px solid #444;
+  padding: 11px 5px 0px 18px;
+  .nav-link{
+    color: $white !important;
+  }
+  .active{
+    background-color: transparent !important;
+    color: $white;
+    border-bottom: solid 1px $blueWrapper !important;
+    border-right: solid 1px #444 !important;
+    border-left: solid 1px #444!important;
+    border-top:solid 1px #444!important;
+  }
+}
+.tab-form-wrapper{
+  border-right: solid 1px #444;
+  border-left: solid 1px #444;
+  border-bottom: solid 1px #444;
+}
 .text-danger {
   color: $red !important;
 }
@@ -31,14 +66,16 @@ $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
 
   table {
     text-align: center;
-
+  tr{
+    border: 1px solid #444;
+  }
     th {
       padding: 4px 0;
       border-top: none;
       color: $white;
       font-weight: normal;
       font-size: 12px;
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid #444;
     }
 
     td {
@@ -62,6 +99,7 @@ $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
 .exchange-field {
   background-color: $blueWrapper;
   border-radius: 5px;
+    border: 1px solid #444;
 }
 
 .exchange-price-wrapper {

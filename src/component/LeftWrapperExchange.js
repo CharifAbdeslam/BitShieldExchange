@@ -1,5 +1,6 @@
 import React from 'react';
 import {Row , Col} from 'reactstrap';
+import OrderForms from './OrderForms'
 import TickerSymbols from './TickerSymbols';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
@@ -67,7 +68,7 @@ class LeftWrapperExchange extends React.Component{
         </Col>
         <TickerSymbols history={this.props.history} />
         <div className="exchange-field mt-2">
-          <h1 className="text-white">HERE GOES THE FORM</h1>
+          <OrderForms />
         </div>
       </Col>
       <Col className="exchange-field ml-2 mr-2">

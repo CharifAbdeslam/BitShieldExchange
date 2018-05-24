@@ -4,14 +4,11 @@ import MarketRow from './MarketRow';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faCircle from '@fortawesome/fontawesome-free-solid/faCircle';
-
+import faAngleDoubleDown from '@fortawesome/fontawesome-free-solid/faAngleDoubleDown';
 const toggleStyle={
-  fontSize: '12px',
+  fontSize: '16px',
   padding:'0px 5px',
-  border:'1px solid white',
   cursor:'pointer',
-  borderRadius: '10px'
 };
 class TickerSymbols extends React.Component{
   constructor(props) {
@@ -24,14 +21,15 @@ class TickerSymbols extends React.Component{
    this.setState({ collapse: !this.state.collapse });
  }
   render(){
+    const { collapse } = this.state;
   return(<div className="mt-2">
-    <Col xs={2} className="exchange-price-wrapper exchange-field pr-1 pl-1 table-ticker">
+    <Col xs={2} className="exchange-price-wrapper exchange-field pr-1 pl-1 pt-1 pb-1 table-ticker">
       <span className="white-text ml-2" onClick={this.toggle}
-            style={toggleStyle}> >> TICKER: <FontAwesomeIcon icon={faCircle}
-            style={{color: '#78C653'}}/>
+            style={toggleStyle}>
+            <FontAwesomeIcon icon={faAngleDoubleDown}  rotation={ collapse ? null:270}/> TICKERS
           </span>
-          <Collapse isOpen={this.state.collapse}>
-          <Table  responsive hover>
+          <Collapse isOpen={collapse}>
+          <Table  responsive hover className="mt-2">
             <thead>
               <tr>
                 <th>SYMBOL</th>
