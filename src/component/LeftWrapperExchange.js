@@ -33,8 +33,10 @@ class LeftWrapperExchange extends React.Component{
         daylichangePre = ticker[1][4].toFixed(2).toString().replace("-","");
         check = ticker[1][5];
       }
-    return(<div className="mt-2">
-        <Col xs={2} className="exchange-price-wrapper exchange-field ml-2">
+    return(
+      <Row className="mt-2">
+      <Col xs={2} className="p-0 ml-2" style={{minWidth:'320px'}}>
+        <Col xs={2} className="exchange-price-wrapper exchange-field">
           <Row className="pl-2">
             <Col xs={2} className="p-0 text-center">
               <h1 className={icon + ' m-0'}></h1>
@@ -64,7 +66,14 @@ class LeftWrapperExchange extends React.Component{
           </Row>
         </Col>
         <TickerSymbols history={this.props.history} />
-      </div>);
+        <div className="exchange-field mt-2">
+          <h1 className="text-white">HERE GOES THE FORM</h1>
+        </div>
+      </Col>
+      <Col className="exchange-field ml-2 mr-2">
+        <h1 className="text-white">HERE GOES THE CHART</h1>
+      </Col>
+    </Row>);
   }
 }
 

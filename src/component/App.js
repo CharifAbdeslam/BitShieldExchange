@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,Row} from 'reactstrap';
+import {Container} from 'reactstrap';
 import LeftWrapperExchange from './LeftWrapperExchange';
 import MenuExchange from './MenuExchange';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
@@ -16,90 +16,90 @@ class Exchange extends React.Component {
       <div>
       <MenuExchange />
       <Container fluid>
-        <Row>
+
           <Switch>
-            <Route exact path="/exchange" component={(props)=>
-              <LeftWrapperExchange
-                symbols="ETH/BTC"
-                ticker={this.props.tickerEth}
-                icon = "cc ETH"/>}/>
-            <Route exact path="/exchange/ETH/BTC" component={(props)=>
-              <LeftWrapperExchange
-                symbols="ETH/BTC"
-                ticker={this.props.tickerEth}
-                icon = "cc ETH"/>}/>
-           <Route exact path="/exchange/BCH/BTC" component={(props)=>
-              <LeftWrapperExchange
-                symbols="BCH/BTC"
-                ticker={this.props.tickerBch}
-                icon = "cc BCH"/>}/>
-          <Route exact path="/exchange/XRP/BTC" component={(props)=>
-              <LeftWrapperExchange
-                symbols="XRP/BTC"
-                ticker={this.props.tickerXrp}
-                icon = "cc XRP"/>}/>
-          <Route exact path="/exchange/LTC/BTC" component={(props)=>
-              <LeftWrapperExchange
-                symbols="LTC/BTC"
-                ticker={this.props.tickerLtc}
-                icon = "cc LTC"/>}/>
-          <Route exact path="/exchange/XMR/BTC" component={(props)=>
-              <LeftWrapperExchange
-                symbols="XMR/BTC"
-                ticker={this.props.tickerXmr}
-                icon = "cc XMR"/>}/>
-          <Route exact path="/exchange/ETC/BTC" component={(props)=>
-              <LeftWrapperExchange
-                symbols="ETC/BTC"
-                ticker={this.props.tickerEtc}
-                icon = "cc ETC"/>}/>
-          <Route exact path="/exchange/IOT/BTC" component={(props)=>
+              <Route exact path="/exchange" component={(props)=>
                 <LeftWrapperExchange
-                symbols="IOT/BTC"
-                ticker={this.props.tickerIot}
-                icon = "cc IOTA"/>}/>
-          <Route exact path="/exchange/DSH/BTC" component={(props)=>
+                  symbols="ETH/BTC"
+                  ticker={this.props.tickerEth}
+                  icon = "cc ETH"/>}/>
+              <Route exact path="/exchange/ETH/BTC" component={(props)=>
                 <LeftWrapperExchange
-                  symbols="DSH/BTC"
-                  ticker={this.props.tickerDsh}
-                  icon = "cc DASH"/>}/>
-          <Route exact path="/exchange/NEO/BTC" component={(props)=>
+                  symbols="ETH/BTC"
+                  ticker={this.props.tickerEth}
+                  icon = "cc ETH"/>}/>
+             <Route exact path="/exchange/BCH/BTC" component={(props)=>
+                <LeftWrapperExchange
+                  symbols="BCH/BTC"
+                  ticker={this.props.tickerBch}
+                  icon = "cc BCH"/>}/>
+            <Route exact path="/exchange/XRP/BTC" component={(props)=>
+                <LeftWrapperExchange
+                  symbols="XRP/BTC"
+                  ticker={this.props.tickerXrp}
+                  icon = "cc XRP"/>}/>
+            <Route exact path="/exchange/LTC/BTC" component={(props)=>
+                <LeftWrapperExchange
+                  symbols="LTC/BTC"
+                  ticker={this.props.tickerLtc}
+                  icon = "cc LTC"/>}/>
+            <Route exact path="/exchange/XMR/BTC" component={(props)=>
+                <LeftWrapperExchange
+                  symbols="XMR/BTC"
+                  ticker={this.props.tickerXmr}
+                  icon = "cc XMR"/>}/>
+            <Route exact path="/exchange/ETC/BTC" component={(props)=>
+                <LeftWrapperExchange
+                  symbols="ETC/BTC"
+                  ticker={this.props.tickerEtc}
+                  icon = "cc ETC"/>}/>
+            <Route exact path="/exchange/IOT/BTC" component={(props)=>
                   <LeftWrapperExchange
-                  symbols="NEO/BTC"
-                  ticker={this.props.tickerNeo}
-                  icon = "cc NEO"/>}/>
-          <Route exact path="/exchange/ZEC/BTC" component={(props)=>
+                  symbols="IOT/BTC"
+                  ticker={this.props.tickerIot}
+                  icon = "cc IOTA"/>}/>
+            <Route exact path="/exchange/DSH/BTC" component={(props)=>
                   <LeftWrapperExchange
-                  symbols="ZEC/BTC"
-                  ticker={this.props.tickerZec}
-                  icon = "cc ZEC"/>}/>
-          <Route exact path="/exchange/EOS/BTC" component={(props)=>
-                  <LeftWrapperExchange
-                  symbols="EOS/BTC"
-                  ticker={this.props.tickerEos}
-                  icon = "cc EOS"/>}/>
-          <Route exact path="/exchange/OMG/BTC" component={(props)=>
-                  <LeftWrapperExchange
-                  symbols="OMG/BTC"
-                  ticker={this.props.tickerOmg}
-                  icon = "cc OMG"/>}/>
-          <Route exact path="/exchange/XVG/BTC" component={(props)=>
-                  <LeftWrapperExchange
-                  symbols="XVG/BTC"
-                  ticker={this.props.tickerXvg}
-                  icon = "cc XVG"/>}/>
-          <Route exact path="/exchange/GNT/BTC" component={(props)=>
-                  <LeftWrapperExchange
-                  symbols="GNT/BTC"
-                  ticker={this.props.tickerGnt}
-                  icon = "cc GNT"/>}/>
-          <Route exact path="/exchange/QTM/BTC" component={(props)=>
-                  <LeftWrapperExchange
-                  symbols="QTM/BTC"
-                  ticker={this.props.tickerQtm}
-                  icon = "cc QTUM"/>}/>
+                    symbols="DSH/BTC"
+                    ticker={this.props.tickerDsh}
+                    icon = "cc DASH"/>}/>
+            <Route exact path="/exchange/NEO/BTC" component={(props)=>
+                    <LeftWrapperExchange
+                    symbols="NEO/BTC"
+                    ticker={this.props.tickerNeo}
+                    icon = "cc NEO"/>}/>
+            <Route exact path="/exchange/ZEC/BTC" component={(props)=>
+                    <LeftWrapperExchange
+                    symbols="ZEC/BTC"
+                    ticker={this.props.tickerZec}
+                    icon = "cc ZEC"/>}/>
+            <Route exact path="/exchange/EOS/BTC" component={(props)=>
+                    <LeftWrapperExchange
+                    symbols="EOS/BTC"
+                    ticker={this.props.tickerEos}
+                    icon = "cc EOS"/>}/>
+            <Route exact path="/exchange/OMG/BTC" component={(props)=>
+                    <LeftWrapperExchange
+                    symbols="OMG/BTC"
+                    ticker={this.props.tickerOmg}
+                    icon = "cc OMG"/>}/>
+            <Route exact path="/exchange/XVG/BTC" component={(props)=>
+                    <LeftWrapperExchange
+                    symbols="XVG/BTC"
+                    ticker={this.props.tickerXvg}
+                    icon = "cc XVG"/>}/>
+            <Route exact path="/exchange/GNT/BTC" component={(props)=>
+                    <LeftWrapperExchange
+                    symbols="GNT/BTC"
+                    ticker={this.props.tickerGnt}
+                    icon = "cc GNT"/>}/>
+            <Route exact path="/exchange/QTM/BTC" component={(props)=>
+                    <LeftWrapperExchange
+                    symbols="QTM/BTC"
+                    ticker={this.props.tickerQtm}
+                    icon = "cc QTUM"/>}/>
           </Switch>
-     </Row>
+
     </Container>
   </div>
     </Router>

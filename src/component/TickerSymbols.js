@@ -1,18 +1,36 @@
 import React from 'react';
-import {Col,Table} from 'reactstrap';
+import {Col,Table,Collapse} from 'reactstrap';
 import MarketRow from './MarketRow';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faCircle from '@fortawesome/fontawesome-free-solid/faCircle';
+
+const toggleStyle={
+  fontSize: '12px',
+  padding:'0px 5px',
+  border:'1px solid white',
+  cursor:'pointer',
+  borderRadius: '10px'
+};
 class TickerSymbols extends React.Component{
+  constructor(props) {
+   super(props);
+   this.toggle = this.toggle.bind(this);
+   this.state = { collapse: true };
+ }
+
+ toggle() {
+   this.setState({ collapse: !this.state.collapse });
+ }
   render(){
   return(<div className="mt-2">
-    <Col xs={2} className="exchange-price-wrapper exchange-field ml-2 pr-1 pl-1 table-ticker">
-      <span className="white-text ml-2"
-            style={{fontSize: '10px'}}>TICKER: <FontAwesomeIcon icon={faCircle}
+    <Col xs={2} className="exchange-price-wrapper exchange-field pr-1 pl-1 table-ticker">
+      <span className="white-text ml-2" onClick={this.toggle}
+            style={toggleStyle}> >> TICKER: <FontAwesomeIcon icon={faCircle}
             style={{color: '#78C653'}}/>
           </span>
+          <Collapse isOpen={this.state.collapse}>
           <Table  responsive hover>
             <thead>
               <tr>
@@ -40,6 +58,7 @@ class TickerSymbols extends React.Component{
           <MarketRow  symbol="QTM/BTC" ticker={this.props.tickerQtm}/>
         </tbody>
           </Table>
+        </Collapse>
     </Col>
   </div>);
  }

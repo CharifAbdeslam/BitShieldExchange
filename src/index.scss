@@ -9,6 +9,7 @@ $greyHard: #504f4f;
 $gerIntense: #0c0c0c;
 $red: #F95A62;
 $green: #78C653;
+$blueWrapper:#1B262D;
 $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
 
 .text-danger {
@@ -59,7 +60,7 @@ $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
 }
 
 .exchange-field {
-  background-color: #1B262D;
+  background-color: $blueWrapper;
   border-radius: 5px;
 }
 
