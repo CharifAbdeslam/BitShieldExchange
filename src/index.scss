@@ -9,44 +9,112 @@ $greyHard: #504f4f;
 $gerIntense: #0c0c0c;
 $red: #F95A62;
 $green: #78C653;
-$blueWrapper:#1B262D;
+$blueWrapper: #1B262D;
 $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
-.exchange-form{
-  label{
-    color:$white;
+.tooltip-inner{
+  background-color: $blue;
+  font-size: 12px;
+  line-height: 1.7;
+  font-family: 'Mina';
+  border: 2px solid $grey;
+  padding: 10px;
+}
+.text-white{
+  color:$white !important;
+}
+.exchange-form {
+  label {
+    color: $white;
     font-size: 12px;
     margin-bottom: 3px;
   }
-  input{
-   width: 90%;
-   background-color: #333F47;
-   border: 1px solid #444;
-   color: white;
-   &:focus{
-     border: 1px solid $orange;
-   }
+  div{
+    width: 100%;
   }
+  input {
+    width: 100%;
+    background-color: #333F47;
+    border: 1px solid #444;
+    color: white;
+    height: 30px;
+    &:focus {
+      border: 1px solid $orange;
+    }
+  }
+
+  .circle-span-sell {
+    float: right;
+    font-size: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+    color:#805457;
+      &:hover{
+        color:$red;
+      }
+    }
+    .circle-span-buy {
+      float: right;
+      font-size: 10px;
+      margin-top: 6px;
+      cursor: pointer;
+      color:#566D4A;
+      &:hover{
+        color:$green;
+        }
+      }
+
+  }
+  button{
+    font-size: 12px;
+    margin-top: 7px;
+    height: 25px;
+    font-weight: bold;
+    &:nth-child(1){
+      background-color:$green;
+      width: 45%;
+      color:$grey;
+      border: none;
+      &:hover{
+        background-color:#BBE0AA;
+      }
+    }
+    &:nth-child(2){
+      background-color:$red;
+      color:$grey;
+      width: 45%;
+      border: none;
+      &:hover{
+        background-color:#FC8086;
+      }
+    }
+
 }
-.nav-tabs{
+
+.nav-tabs {
   border-bottom: 1px solid #444;
-  padding: 11px 5px 0px 18px;
-  .nav-link{
+  padding: 11px 5px 0 18px;
+
+  .nav-link {
     color: $white !important;
+    cursor: pointer;
   }
-  .active{
+
+  .active {
     background-color: transparent !important;
     color: $white;
     border-bottom: solid 1px $blueWrapper !important;
     border-right: solid 1px #444 !important;
     border-left: solid 1px #444!important;
-    border-top:solid 1px #444!important;
+    border-top: solid 1px #444!important;
   }
 }
-.tab-form-wrapper{
+
+.tab-form-wrapper {
   border-right: solid 1px #444;
   border-left: solid 1px #444;
   border-bottom: solid 1px #444;
 }
+
 .text-danger {
   color: $red !important;
 }
@@ -56,19 +124,22 @@ $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
 }
 
 .table-ticker {
-  a{
-    color:$white;
-    text-decoration:none ;
+  a {
+    color: $white;
+    text-decoration: none;
   }
+
   span {
     font-size: 12px;
   }
 
   table {
     text-align: center;
-  tr{
-    border: 1px solid #444;
-  }
+
+    tr {
+      border: 1px solid #444;
+    }
+
     th {
       padding: 4px 0;
       border-top: none;
@@ -99,7 +170,7 @@ $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
 .exchange-field {
   background-color: $blueWrapper;
   border-radius: 5px;
-    border: 1px solid #444;
+  border: 1px solid #444;
 }
 
 .exchange-price-wrapper {
@@ -171,6 +242,7 @@ body {
       text-decoration: none;
       font-size: 14px;
       font-weight: bold;
+
       &:hover {
         color: white;
       }

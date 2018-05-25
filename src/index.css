@@ -1,22 +1,76 @@
 @import url("https://fonts.googleapis.com/css?family=Mina:400,700");
+.tooltip-inner {
+  background-color: #021521;
+  font-size: 12px;
+  line-height: 1.7;
+  font-family: 'Mina';
+  border: 2px solid #1B262D;
+  padding: 10px; }
+
+.text-white {
+  color: #D2D3D3 !important; }
+
 .exchange-form label {
   color: #D2D3D3;
   font-size: 12px;
   margin-bottom: 3px; }
 
+.exchange-form div {
+  width: 100%; }
+
 .exchange-form input {
-  width: 90%;
+  width: 100%;
   background-color: #333F47;
   border: 1px solid #444;
-  color: white; }
+  color: white;
+  height: 30px; }
   .exchange-form input:focus {
     border: 1px solid #F27420; }
 
+.exchange-form .circle-span-sell {
+  float: right;
+  font-size: 10px;
+  margin-top: 6px;
+  cursor: pointer;
+  color: #805457; }
+  .exchange-form .circle-span-sell:hover {
+    color: #F95A62; }
+
+.exchange-form .circle-span-buy {
+  float: right;
+  font-size: 10px;
+  margin-top: 6px;
+  cursor: pointer;
+  color: #566D4A; }
+  .exchange-form .circle-span-buy:hover {
+    color: #78C653; }
+
+button {
+  font-size: 12px;
+  margin-top: 7px;
+  height: 25px;
+  font-weight: bold; }
+  button:nth-child(1) {
+    background-color: #78C653;
+    width: 45%;
+    color: #1B262D;
+    border: none; }
+    button:nth-child(1):hover {
+      background-color: #BBE0AA; }
+  button:nth-child(2) {
+    background-color: #F95A62;
+    color: #1B262D;
+    width: 45%;
+    border: none; }
+    button:nth-child(2):hover {
+      background-color: #FC8086; }
+
 .nav-tabs {
   border-bottom: 1px solid #444;
-  padding: 11px 5px 0px 18px; }
+  padding: 11px 5px 0 18px; }
   .nav-tabs .nav-link {
-    color: #D2D3D3 !important; }
+    color: #D2D3D3 !important;
+    cursor: pointer; }
   .nav-tabs .active {
     background-color: transparent !important;
     color: #D2D3D3;
