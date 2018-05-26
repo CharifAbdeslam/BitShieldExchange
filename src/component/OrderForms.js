@@ -57,10 +57,10 @@ export default class OrderForms extends React.Component {
         </Nav>
         <TabContent className="pb-2" activeTab={this.state.activeTab}>
           <TabPane className="tab-form-wrapper p-2 ml-1 mr-1" tabId="1">
-              <ExchangeForm price = {this.props.avg}/>
+              <ExchangeForm  ticker={ticker} symbols={symbols}/>
           </TabPane>
           <TabPane className="tab-form-wrapper p-2 ml-1 mr-1" tabId="2">
-            <LimitForm {...this.props}/>
+            <LimitForm ticker={ticker} symbols={symbols}/>
           </TabPane>
           <TabPane className="tab-form-wrapper p-2 ml-1 mr-1" tabId="3">
             <h1 className="text-white">BALANCE GOES HERE</h1>

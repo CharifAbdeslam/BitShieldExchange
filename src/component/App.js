@@ -16,7 +16,6 @@ class Exchange extends React.Component {
       <div>
       <MenuExchange />
       <Container fluid>
-
           <Switch>
               <Route exact path="/exchange" component={(props)=>
                 <LeftWrapperExchange
