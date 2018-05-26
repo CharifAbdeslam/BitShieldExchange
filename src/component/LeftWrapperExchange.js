@@ -66,9 +66,9 @@ class LeftWrapperExchange extends React.Component{
             </Col>
           </Row>
         </Col>
-        <TickerSymbols history={this.props.history} />
+        <TickerSymbols/>
         <div className="exchange-field mt-2">
-          <OrderForms />
+          <OrderForms {...this.props} />
         </div>
       </Col>
       <Col className="exchange-field ml-2 mr-2">

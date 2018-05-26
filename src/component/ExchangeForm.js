@@ -30,7 +30,7 @@ class ExchangeForm extends React.Component{
       <Form className="exchange-form row">
           <Col>
             <label>PRICE BTC:</label><br></br>
-            <input className="p-1" /><br></br>
+            <input className="p-1" readOnly value={this.props.price}/><br></br>
             <label>AMOUNT:</label>
             <span id="TooltipMaxSell" className="circle-span-sell"><FontAwesomeIcon icon={faCircle}/></span>
             <Tooltip placement="top" isOpen={toolTipOpenSell}

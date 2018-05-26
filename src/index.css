@@ -7,6 +7,14 @@
   border: 2px solid #1B262D;
   padding: 10px; }
 
+.nav-order-form .nav-item {
+  font-size: 12px; }
+  .nav-order-form .nav-item a {
+    padding: 10px; }
+
+.tooltip.show {
+  opacity: 1; }
+
 .text-white {
   color: #D2D3D3 !important; }
 

@@ -19,6 +19,17 @@ $guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
   border: 2px solid $grey;
   padding: 10px;
 }
+.nav-order-form{
+  .nav-item{
+    font-size: 12px;
+    a{
+      padding: 10px;
+    }
+  }
+}
+.tooltip.show {
+    opacity: 1;
+}
 .text-white{
   color:$white !important;
 }
